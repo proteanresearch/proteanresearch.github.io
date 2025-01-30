@@ -1,37 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Protean Research Inc.</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        p {
-            text-align: justify;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protean Research Inc.</title>
+  <style>
+    /* Basic reset and typography */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+    }
+    header, section, footer {
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 2rem 1rem;
+    }
+    header {
+      text-align: center;
+      background: #efefef;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #ccc;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #005096;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #005096;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #005096;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #003d72;
+    }
+    footer {
+      text-align: center;
+      background: #efefef;
+      padding: 2rem 1rem;
+      border-top: 1px solid #ccc;
+      font-size: 0.9rem;
+    }
+    /* Responsive images or sections if needed */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Protean Research Inc.</h1>
-        <h2>Advancing Oncology Diagnostics</h2>
-        <p>Protean Research Inc. is dedicated to developing innovative diagnostics that inform the selection of combination therapies for cancer treatment. Our mission is to address the challenge of drug escape in oncology, where cancer cells adapt and become resistant to single-agent therapies.</p>
-        <p>With a large number of new oncology therapies expected to be approved in the coming years, selecting the most effective treatment combinations is crucial for improving patient outcomes. However, current diagnostic approaches have not kept pace with the rapid advancements in analytical techniques and the emergence of new technologies over the past decade.</p>
-        <p>At Protean Research, we are developing new assays and workflows using existing analytical tools to provide oncologists with the information they need to make informed decisions about combination therapies. Our goal is to enhance the precision of cancer treatment and improve patient care.</p>
-            <p>Based in Los Angeles, Protean Research Inc. is positioned at the forefront of oncology diagnostics innovation.</p>
-        <p>Contact us at <a href="mailto:info@proteanresearch.org">info@proteanresearch.org</a> for collaboration and partnership opportunities.</p>
-        <img src="https://images.unsplash.com/photo-1608310393642-7d7f72e3f941?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80 alt="Protean Research Graphic" style="width:100%; height:auto;"></div>
+
+  <header>
+    <h1>Protean Research Inc.</h1>
+    <p>Transforming Cancer Therapy through Advanced Diagnostics</p>
+  </header>
+
+  <section id="challenge">
+    <h2>The Challenge: Overcoming Drug Escape in Oncology</h2>
+    <p>
+      As cancer therapies become more sophisticated, malignant cells still find ways to resist even the most potent treatments. 
+      This phenomenon, often called <strong>drug escape</strong>, allows tumors to adapt and evolve, diminishing the effectiveness of 
+      single treatments or even combination regimens over time.
+    </p>
+    <p>
+      With a surge of novel oncology drugs hitting the market, clinicians have an ever-expanding toolbox. Yet the complexity of 
+      tumor biology means there is no simple “one-size-fits-all” approach. Instead, each patient’s tumor may require unique 
+      therapeutic cocktails, and finding the right combination is a significant challenge.
+    </p>
+  </section>
+
+  <section id="future">
+    <h2>Growth in Novel Oncology Therapies</h2>
+    <p>
+      The oncology pipeline is more robust than ever. Over the next few years, a large number of new oncology therapies—ranging from 
+      targeted small molecules to cell-based immunotherapies—are expected to receive regulatory approval. While this breadth of 
+      options promises new hope for patients, it also introduces significant complexity when deciding among multiple treatment 
+      pathways.
+    </p>
+    <p>
+      The central question for clinicians remains: <em>Which therapy or combination of therapies will offer the best outcomes for this 
+      specific patient?</em> 
+    </p>
+  </section>
+
+  <section id="diagnostics-gap">
+    <h2>The Diagnostics Gap</h2>
+    <p>
+      Despite remarkable advances in research tools—single-cell sequencing, CRISPR-based screens, high-throughput imaging, and 
+      more—<strong>diagnostic approaches in routine oncology practice have not kept pace</strong>. Tumor profiling often remains 
+      limited to a narrow panel of known mutations, missing the broader molecular and cellular context that influences treatment 
+      response and resistance.
+    </p>
+    <p>
+      To solve the puzzle of drug escape and optimal therapy selection, the diagnostic industry must leverage the full power of 
+      these emerging analytical techniques and integrate them into clinical practice in a rigorous yet accessible way.
+    </p>
+  </section>
+
+  <section id="our-approach">
+    <h2>Our Approach</h2>
+    <p>
+      At <strong>Protean Research Inc.</strong>, we’re building diagnostic solutions to help clinicians and researchers 
+      identify the best combination therapies for each patient's unique cancer. Our platform:
+    </p>
+    <ul>
+      <li>Integrates multi-omics data to build a comprehensive tumor profile.</li>
+      <li>Leverages advanced computational tools to predict potential pathways of drug escape.</li>
+      <li>Facilitates rational combination therapy selection by highlighting actionable targets.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Interested in our platform or potential collaborations? Get in touch:
+    </p>
+    <a class="btn" href="mailto:info@proteanresearch.com">Email Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Protean Research Inc. | All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Update footer year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
