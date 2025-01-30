@@ -1,180 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protean Research Inc.</title>
-  <style>
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    /* Section Styling */
-    .section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 40px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-    
-    /* Overlay for better text readability */
-    .section::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-      z-index: 1;
-    }
-    
-    .section-content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-    }
-    
-    h1, h2 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-    }
-    
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #005096;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease-in-out;
-    }
-    
-    .btn:hover {
-      background: #003d72;
-    }
-
-    /* Section Background Images (Free Stock Photography) */
-    #home {
-      background-image: url('https://source.unsplash.com/1600x900/?laboratory,science');
-    }
-    
-    #challenge {
-      background-image: url('https://source.unsplash.com/1600x900/?cancer,research');
-    }
-    
-    #future {
-      background-image: url('https://source.unsplash.com/1600x900/?medicine,technology');
-    }
-    
-    #diagnostics {
-      background-image: url('https://source.unsplash.com/1600x900/?biotech,innovation');
-    }
-    
-    #contact {
-      background-image: url('https://source.unsplash.com/1600x900/?doctor,hospital');
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #005096;
-      color: white;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      h1, h2 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            height: 50vh;
+            background-color: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Hero Section -->
-  <section id="home" class="section">
-    <div class="section-content">
-      <h1>Protean Research Inc.</h1>
-      <p>Transforming Cancer Therapy through Advanced Diagnostics</p>
-      <a class="btn" href="#contact">Get in Touch</a>
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');">
     </div>
-  </section>
 
-  <!-- Challenge Section -->
-  <section id="challenge" class="section">
-    <div class="section-content">
-      <h2>The Challenge: Overcoming Drug Escape</h2>
-      <p>
-        Cancer cells evolve and adapt to resist treatments, reducing the effectiveness of single therapies. 
-        Precision combination therapies are crucial to improving patient outcomes.
-      </p>
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Scroll down to see the parallax effect in action.</p>
     </div>
-  </section>
 
-  <!-- Future Oncology Therapies -->
-  <section id="future" class="section">
-    <div class="section-content">
-      <h2>Growth in Novel Oncology Therapies</h2>
-      <p>
-        The coming years will see a surge in FDA-approved oncology treatments. 
-        The challenge lies in selecting the right therapy or combination for each patient.
-      </p>
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');">
     </div>
-  </section>
 
-  <!-- Diagnostics Gap -->
-  <section id="diagnostics" class="section">
-    <div class="section-content">
-      <h2>The Diagnostics Gap</h2>
-      <p>
-        Despite significant advancements in analytics, clinical diagnostics have not kept pace. 
-        Modern diagnostic tools must integrate the latest breakthroughs to guide therapy decisions.
-      </p>
+    <div class="content">
+        <h1>Our Services</h1>
+        <p>We offer a wide range of services to meet your needs.</p>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="section-content">
-      <h2>Contact Us</h2>
-      <p>
-        Interested in collaboration? Get in touch to explore partnerships and opportunities.
-      </p>
-      <a class="btn" href="mailto:info@proteanresearch.com">Email Us</a>
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e');">
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; <span id="year"></span> Protean Research Inc. | All Rights Reserved.</p>
-  </footer>
-
-  <script>
-    // Automatically update the year in the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for more information.</p>
+    </div>
 </body>
 </html>
