@@ -20,9 +20,9 @@
 
     /* Parallax Sections */
     .parallax {
-      height: 100vh; /* Full viewport height */
-      background-size: cover;      /* Fill container, cropping if necessary */
-      background-position: center; /* Centered position */
+      height: 100vh;             /* Full viewport height */
+      background-size: cover;    /* Fill container, cropping if necessary */
+      background-position: center;
       background-repeat: no-repeat;
       position: relative;
       background-attachment: fixed; /* Parallax effect on desktop */
@@ -31,7 +31,10 @@
     /* Overlay for the Hero Section */
     .overlay {
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0;
       background: rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
@@ -56,21 +59,24 @@
     h2 {
       margin-bottom: 20px;
     }
+
     p {
       margin-bottom: 20px;
       line-height: 1.6;
     }
+
     ul {
       margin-left: 20px;
       margin-bottom: 20px;
     }
+
     li {
       margin-bottom: 10px;
     }
 
     /* 
-      Disable the 'background-attachment: fixed' for screens <= 1024px. 
-      This addresses the zoom/pixelation issues on iPads and other mobile devices. 
+      Disable 'background-attachment: fixed' for screens <= 1024px 
+      (addresses zoom/pixelation issues on some devices). 
     */
     @media (max-width: 1024px) {
       .parallax {
@@ -85,10 +91,12 @@
 <body>
 
   <!-- HERO SECTION -->
-  <!-- Photo by ThisIsEngineering from Pexels: 
-       https://www.pexels.com/photo/laboratory-experiment-3912374/ -->
-  <div class="parallax" 
-       style="background-image: url('https://images.pexels.com/photos/3912374/pexels-photo-3912374.jpeg?w=3000');">
+  <!-- Photo by Edward Jenner from Pexels: 
+       https://www.pexels.com/photo/man-in-blue-tshirt-looking-through-a-microscope-4033148/ -->
+  <div 
+    class="parallax" 
+    style="background-image: url('https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?w=3000');"
+  >
     <div class="overlay">
       <h1>Protean Research Inc.</h1>
     </div>
@@ -107,11 +115,12 @@
   </section>
 
   <!-- PARALLAX 2 -->
-  <!-- Photo by Chokniti Khongchum from Pexels:
-       https://www.pexels.com/photo/person-holding-test-tubes-2280549/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?w=3000');">
-  </div>
+  <!-- Photo by ThisIsEngineering from Pexels:
+       https://www.pexels.com/photo/scientists-discussing-lab-results-3861431/ -->
+  <div 
+    class="parallax"
+    style="background-image: url('https://images.pexels.com/photos/3861431/pexels-photo-3861431.jpeg?w=3000');"
+  ></div>
 
   <!-- THE CHALLENGE OF DRUG ESCAPE -->
   <section class="content">
@@ -127,10 +136,11 @@
 
   <!-- PARALLAX 3 -->
   <!-- Photo by ThisIsEngineering from Pexels:
-       https://www.pexels.com/photo/male-chemist-holding-lab-tool-957974/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/957974/pexels-photo-957974.jpeg?w=3000');">
-  </div>
+       https://www.pexels.com/photo/chemical-experiment-3861442/ -->
+  <div 
+    class="parallax"
+    style="background-image: url('https://images.pexels.com/photos/3861442/pexels-photo-3861442.jpeg?w=3000');"
+  ></div>
 
   <!-- THE GROWING LANDSCAPE OF ONCOLOGY THERAPIES -->
   <section class="content">
@@ -146,11 +156,12 @@
   </section>
 
   <!-- PARALLAX 4 -->
-  <!-- Photo by ThisIsEngineering from Pexels:
-       https://www.pexels.com/photo/lab-experiment-3825468/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/3825468/pexels-photo-3825468.jpeg?w=3000');">
-  </div>
+  <!-- Photo by Polina Tankilevitch from Pexels:
+       https://www.pexels.com/photo/medical-workers-collecting-a-sample-8553891/ -->
+  <div 
+    class="parallax"
+    style="background-image: url('https://images.pexels.com/photos/8553891/pexels-photo-8553891.jpeg?w=3000');"
+  ></div>
 
   <!-- DIAGNOSTIC APPROACHES LAG BEHIND -->
   <section class="content">
@@ -167,11 +178,12 @@
   </section>
 
   <!-- PARALLAX 5 -->
-  <!-- Photo by Artem Podrez from Pexels:
-       https://www.pexels.com/photo/women-testing-samples-in-laboratory-5462247/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/5462247/pexels-photo-5462247.jpeg?w=3000');">
-  </div>
+  <!-- Photo by Gustavo Fring from Pexels:
+       https://www.pexels.com/photo/people-in-a-laboratory-3985153/ -->
+  <div 
+    class="parallax"
+    style="background-image: url('https://images.pexels.com/photos/3985153/pexels-photo-3985153.jpeg?w=3000');"
+  ></div>
 
   <!-- OUR FOCUS ON COMBINATION THERAPIES -->
   <section class="content">
@@ -186,16 +198,17 @@
     </p>
   </section>
 
-  <!-- PARALLAX 6 (REPLACED BROKEN URL WITH A RELEVANT IMAGE) -->
-  <!-- Photo by Tima Miroshnichenko from Pexels:
-       https://www.pexels.com/photo/a-scientist-looking-through-a-microscope-8852255/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/8852255/pexels-photo-8852255.jpeg?w=3000');">
-  </div>
+  <!-- PARALLAX 6 -->
+  <!-- Photo by Chokniti Khongchum from Pexels:
+       https://www.pexels.com/photo/person-holding-test-tubes-2280549/ -->
+  <div 
+    class="parallax"
+    style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?w=3000');"
+  ></div>
 
   <!-- OPTIONAL: DRUG RESISTANCE / COMBINATION THERAPY DIAGRAM -->
   <section class="content">
-    <h2>Illustrating Drug Resistance and Combination Therapies</h2>
+    <h2>Illustrating Drug Resistance & Combination Therapies</h2>
     <p>
       Below is an example diagram (placeholder) that highlights how cancer cells 
       can evolve resistance to single agents, underscoring the need for 
@@ -214,11 +227,12 @@
   </section>
 
   <!-- PARALLAX 7 -->
-  <!-- Photo by Mikhail Nilov from Pexels:
-       https://www.pexels.com/photo/female-laboratory-technician-using-a-microscope-11064643/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/11064643/pexels-photo-11064643.jpeg?w=3000');">
-  </div>
+  <!-- Photo by Tima Miroshnichenko from Pexels:
+       https://www.pexels.com/photo/a-scientist-looking-through-a-microscope-8852255/ -->
+  <div 
+    class="parallax"
+    style="background-image: url('https://images.pexels.com/photos/8852255/pexels-photo-8852255.jpeg?w=3000');"
+  ></div>
 
   <!-- CONTACT SECTION -->
   <section class="content">
