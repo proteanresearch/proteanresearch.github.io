@@ -3,82 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <title>Protean Research Inc.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    /* Reset some default browser styles */
+    /* Basic Reset & Body Styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    body {
+    body, html {
+      height: 100%;
+      width: 100%;
       font-family: Arial, sans-serif;
       color: #333;
-      line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
-    header, section, footer {
-      width: 100%;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    /* Parallax sections */
+    /* Parallax Sections */
     .parallax {
-      background-attachment: fixed;
+      height: 100vh; /* Full viewport height */
+      background-attachment: fixed; 
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff;
+      position: relative;
     }
 
-    /* Additional styling for text containers */
+    /* Overlay for the Hero Section */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay h1 {
+      color: #fff;
+      font-size: 3em;
+      text-align: center;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    /* Content Sections */
     .content {
       max-width: 800px;
       margin: 0 auto;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    /* Section headings */
-    h1, h2 {
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    h1 {
-      font-size: 3rem;
+      padding: 60px 20px;
     }
 
     h2 {
-      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    /* Minimal footer styling */
-    footer {
-      background-color: #f8f8f8;
-      color: #666;
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
     }
 
-    /* Responsive design tweaks */
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Adjustments */
     @media (max-width: 768px) {
-      .parallax {
-        background-attachment: scroll; /* Disables parallax effect on mobile for performance/compatibility */
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
+      .overlay h1 {
+        font-size: 2em;
       }
     }
   </style>
@@ -86,75 +84,141 @@
 <body>
 
   <!-- HERO SECTION -->
-  <header class="parallax" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1a5a85f58d2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
-    <div class="content">
+  <!-- Photo by ThisIsEngineering from Pexels: 
+       https://www.pexels.com/photo/medical-scientists-working-on-a-microscope-7363769/ -->
+  <div class="parallax" 
+       style="background-image: url('https://images.pexels.com/photos/7363769/pexels-photo-7363769.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+    <div class="overlay">
       <h1>Protean Research Inc.</h1>
-      <p>Revolutionizing combination therapy decisions in oncology.</p>
     </div>
-  </header>
+  </div>
 
-  <!-- ABOUT/INTRO SECTION -->
-  <section id="about">
-    <h2>About Us</h2>
+  <!-- INTRODUCTION -->
+  <section class="content">
+    <h2>Introduction</h2>
     <p>
-      Protean Research Inc. is dedicated to developing novel diagnostics to inform the selection of
-      combination therapies for cancer patients. Our mission is to enable clinicians to optimize treatment
-      strategies by matching each patient to the most effective blend of therapies, accelerating progress toward
-      better outcomes for all.
+      Protean Research Inc. is dedicated to transforming cancer treatment by developing 
+      next-generation diagnostics that guide the selection of combination therapies. 
+      Our mission is to empower clinicians with the tools they need to determine the 
+      most effective, personalized treatments for each patient—ultimately improving 
+      outcomes and saving lives.
     </p>
   </section>
 
-  <!-- THE CHALLENGE SECTION -->
-  <section class="parallax" style="background-image: url('https://images.unsplash.com/photo-1590502593730-e1aef5ed5f0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
-    <div class="content">
-      <h2>The Challenge</h2>
-      <p>
-        <strong>Drug escape in oncology</strong> is a major hurdle. Cancer cells evolve quickly and can become
-        resistant to single-agent therapies, rendering once-effective treatments less successful over time. The
-        rapid development and approval of new oncology drugs – with many more in the pipeline – make it increasingly
-        difficult to determine which therapies or combinations will deliver the best results. 
-      </p>
-      <p>
-        Diagnostic approaches have not kept pace with the explosion of new treatments and sophisticated 
-        analytical technologies that have emerged in the last two decades. While large resources are devoted to 
-        drug discovery and drug development, comparatively fewer efforts focus on guiding clinicians and patients 
-        toward the right combination regimens. This gap in innovative diagnostic solutions perpetuates suboptimal 
-        patient outcomes and limits the potential of cutting-edge therapies.
-      </p>
-    </div>
-  </section>
+  <!-- PARALLAX 2 -->
+  <!-- Photo by Edward Jenner from Pexels: 
+       https://www.pexels.com/photo/microscope-lab-science-close-up-4033157/ -->
+  <div class="parallax"
+       style="background-image: url('https://images.pexels.com/photos/4033157/pexels-photo-4033157.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+  </div>
 
-  <!-- SOLUTION SECTION -->
-  <section id="solution">
-    <h2>Our Approach</h2>
+  <!-- THE CHALLENGE OF DRUG ESCAPE -->
+  <section class="content">
+    <h2>The Challenge of Drug Escape</h2>
     <p>
-      At Protean Research, we believe that the most impactful way to improve patient outcomes is by pairing 
-      individuals with the best combination of therapies. Unlike many manufacturers who focus on companion 
-      diagnostics for their specific drug candidates, our cross-cancer, universal approach aims to guide 
-      therapy selection at a broader level, ensuring that every patient receives a rational, data-driven 
-      combination of treatments.
-    </p>
-    <p>
-      Our platform integrates cutting-edge molecular diagnostics, advanced analytics, and a systematic evaluation 
-      of existing and emerging therapeutics. By partnering with leading academic institutions, clinical centers, 
-      and pharmaceutical innovators, we are creating a powerful diagnostic ecosystem that can keep pace with 
-      the rapidly evolving oncology landscape.
+      Cancer is notoriously adaptable. Even when a therapy initially appears effective, 
+      many tumors find ways to evade its impact. This <strong>drug escape</strong> 
+      results in cancer progression and often requires new or additional treatments. 
+      As the number of approved oncology drugs grows, understanding and predicting how 
+      tumors might outmaneuver each agent becomes increasingly vital.
     </p>
   </section>
 
-  <!-- CONTACT/FOOTER SECTION -->
-  <footer>
-    <p>
-      <strong>Contact us:</strong> info@proteanresearch.org
-    </p>
-    <p>
-      &copy; <span id="year"></span> Protean Research Inc. All Rights Reserved.
-    </p>
-  </footer>
+  <!-- PARALLAX 3 -->
+  <!-- Photo by National Cancer Institute on Unsplash: 
+       https://unsplash.com/photos/5fNmWej4tAA -->
+  <div class="parallax"
+       style="background-image: url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?crop=entropy&cs=tinysrgb&fit=max&w=1920');">
+  </div>
 
-  <!-- Optional JavaScript to update footer year automatically -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- THE GROWING LANDSCAPE OF ONCOLOGY THERAPIES -->
+  <section class="content">
+    <h2>The Growing Landscape of Oncology Therapies</h2>
+    <p>
+      Over the next few years, <strong>many new oncology therapies</strong> will reach 
+      the market, offering unprecedented options for patients and clinicians. However, 
+      with such a rapidly expanding toolkit, clinicians face a daunting challenge: 
+      <em>how to identify the most potent drug or combination of drugs for each specific 
+      tumor profile</em>. Traditional diagnostic models have not kept pace with this 
+      expansion, leaving an urgent need for more sophisticated approaches.
+    </p>
+  </section>
+
+  <!-- PARALLAX 4 -->
+  <!-- Photo by Mikhail Nilov from Pexels:
+       https://www.pexels.com/photo/close-up-photo-of-test-tubes-7823323/ -->
+  <div class="parallax"
+       style="background-image: url('https://images.pexels.com/photos/7823323/pexels-photo-7823323.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+  </div>
+
+  <!-- DIAGNOSTIC APPROACHES LAG BEHIND -->
+  <section class="content">
+    <h2>Diagnostic Approaches Lag Behind</h2>
+    <p>
+      Despite significant advances in <strong>analytical techniques</strong>—from 
+      genomics and proteomics to novel imaging methods—diagnostic innovations in 
+      oncology have <em>not kept up</em>. Existing companion diagnostics are typically 
+      tied to individual drugs or specific biomarkers, and do not address the broader, 
+      cross-cancer need to <strong>rationally select among multiple therapies</strong>. 
+      As a result, patients often miss the optimal therapeutic combination because 
+      today’s diagnostics offer only limited guidance.
+    </p>
+  </section>
+
+  <!-- PARALLAX 5 -->
+  <!-- Photo by CDC on Unsplash:
+       https://unsplash.com/photos/w9KEokhajKw -->
+  <div class="parallax"
+       style="background-image: url('https://images.unsplash.com/photo-1579154204601-5e74a9027d0e?crop=entropy&cs=tinysrgb&fit=max&w=1920');">
+  </div>
+
+  <!-- OUR FOCUS ON COMBINATION THERAPIES -->
+  <section class="content">
+    <h2>Our Focus on Combination Therapies</h2>
+    <p>
+      Evidence shows that <strong>pairing patients with the best possible combination of therapies</strong> 
+      yields the greatest impact on long-term outcomes. Yet, funding and development 
+      resources have traditionally flowed toward drug discovery and development rather 
+      than <em>diagnostic innovation</em>. Protean Research fills this critical gap by 
+      leveraging advanced analytical techniques and data-driven models to match each 
+      patient’s cancer profile to the <strong>most promising therapy combination</strong>.
+    </p>
+  </section>
+
+  <!-- PARALLAX 6 -->
+  <!-- Photo by Fauxels from Pexels:
+       https://www.pexels.com/photo/people-discussing-about-strategy-3182779/ -->
+  <div class="parallax"
+       style="background-image: url('https://images.pexels.com/photos/3182779/pexels-photo-3182779.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+  </div>
+
+  <!-- WHY PROTEAN RESEARCH? -->
+  <section class="content">
+    <h2>Why Protean Research?</h2>
+    <ul>
+      <li><strong>Expertise:</strong> Our team of scientists and clinicians brings together deep experience in oncology, diagnostics, and translational research.</li>
+      <li><strong>Innovation:</strong> We employ cutting-edge analytical methods to reveal pathways of drug resistance and susceptibility.</li>
+      <li><strong>Collaboration:</strong> We work closely with pharmaceutical partners, academic researchers, and clinical teams to ensure our diagnostics are practical, cost-effective, and aligned with real-world patient needs.</li>
+      <li><strong>Impact:</strong> By guiding clinical decision-making with precision diagnostics, we aim to enhance survival rates and quality of life for cancer patients.</li>
+    </ul>
+  </section>
+
+  <!-- PARALLAX 7 -->
+  <!-- Photo by fauxels from Pexels: 
+       https://www.pexels.com/photo/man-and-woman-near-table-3184465/ -->
+  <div class="parallax"
+       style="background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="content">
+    <h2>Contact</h2>
+    <p>
+      Whether you are a pharmaceutical company, healthcare provider, or research institution, 
+      we invite you to explore collaboration opportunities with us. <br />
+      <strong>Email:</strong> <a href="mailto:info@proteanresearch.org">info@proteanresearch.org</a>
+    </p>
+  </section>
+
 </body>
 </html>
