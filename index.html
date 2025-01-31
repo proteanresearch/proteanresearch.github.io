@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Protean Research Inc.</title>
   <style>
-    /* Basic Reset & Body Styles */
     * {
       margin: 0;
       padding: 0;
@@ -17,18 +17,14 @@
       color: #333;
       scroll-behavior: smooth;
     }
-
-    /* Parallax Sections */
     .parallax {
-      height: 100vh; /* Full viewport height */
-      background-size: cover;      /* Fill container, cropping if necessary */
-      background-position: center; /* Centered position */
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
       position: relative;
-      background-attachment: fixed; /* Parallax effect on desktop */
+      background-attachment: fixed;
     }
-
-    /* Overlay for the Hero Section */
     .overlay {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -37,7 +33,6 @@
       align-items: center;
       justify-content: center;
     }
-
     .overlay h1 {
       color: #fff;
       font-size: 3em;
@@ -45,14 +40,11 @@
       margin: 0;
       padding: 0 20px;
     }
-
-    /* Content Sections */
     .content {
       max-width: 800px;
       margin: 0 auto;
       padding: 60px 20px;
     }
-
     h2 {
       margin-bottom: 20px;
     }
@@ -67,11 +59,38 @@
     li {
       margin-bottom: 10px;
     }
-
-    /* 
-      Disable the 'background-attachment: fixed' for screens <= 1024px. 
-      This addresses the zoom/pixelation issues on iPads and other mobile devices. 
-    */
+    .infographic {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .infographic img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-style: italic;
+      color: #666;
+      margin-top: 10px;
+    }
+    .interactive-diagram {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .interactive-diagram img {
+      max-width: 100%;
+      height: auto;
+    }
+    .info-box {
+      display: none;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .info-box h3 {
+      margin-bottom: 10px;
+    }
     @media (max-width: 1024px) {
       .parallax {
         background-attachment: scroll;
@@ -83,143 +102,112 @@
   </style>
 </head>
 <body>
-
-  <!-- HERO SECTION -->
-  <!-- Photo by ThisIsEngineering from Pexels: 
-       https://www.pexels.com/photo/laboratory-experiment-3912374/ -->
-  <div class="parallax" 
-       style="background-image: url('https://images.pexels.com/photos/3912374/pexels-photo-3912374.jpeg?w=3000');">
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/3912374/pexels-photo-3912374.jpeg?w=3000');">
     <div class="overlay">
       <h1>Protean Research Inc.</h1>
     </div>
   </div>
 
-  <!-- INTRODUCTION -->
   <section class="content">
     <h2>Introduction</h2>
-    <p>
-      Protean Research Inc. is dedicated to transforming cancer treatment by developing 
-      next-generation diagnostics that guide the selection of combination therapies. 
-      Our mission is to empower clinicians with the tools they need to determine the 
-      most effective, personalized treatments for each patient—ultimately improving 
-      outcomes and saving lives.
-    </p>
+    <p>Protean Research Inc. is dedicated to transforming cancer treatment by developing next-generation diagnostics that guide the selection of combination therapies. Our mission is to empower clinicians with the tools they need to determine the most effective, personalized treatments for each patient—ultimately improving outcomes and saving lives.</p>
   </section>
 
-  <!-- PARALLAX 2 -->
-  <!-- Photo by Chokniti Khongchum from Pexels:
-       https://www.pexels.com/photo/person-holding-test-tubes-2280549/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?w=3000');">
-  </div>
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?w=3000');"></div>
 
-  <!-- THE CHALLENGE OF DRUG ESCAPE -->
   <section class="content">
     <h2>The Challenge of Drug Escape</h2>
-    <p>
-      Cancer is notoriously adaptable. Even when a therapy initially appears effective, 
-      many tumors find ways to evade its impact. This <strong>drug escape</strong> 
-      results in cancer progression and often requires new or additional treatments. 
-      As the number of approved oncology drugs grows, understanding and predicting how 
-      tumors might outmaneuver each agent becomes increasingly vital.
-    </p>
+    <p>Cancer is notoriously adaptable. Even when a therapy initially appears effective, many tumors find ways to evade its impact. This <strong>drug escape</strong> results in cancer progression and often requires new or additional treatments. As the number of approved oncology drugs grows, understanding and predicting how tumors might outmaneuver each agent becomes increasingly vital.</p>
   </section>
 
-  <!-- PARALLAX 3 -->
-  <!-- Photo by ThisIsEngineering from Pexels:
-       https://www.pexels.com/photo/male-chemist-holding-lab-tool-957974/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/957974/pexels-photo-957974.jpeg?w=3000');">
-  </div>
+  <section class="content">
+    <h2>Drug Escape Visualization</h2>
+    <div class="infographic">
+      <img src="drug-escape-infographic.png" alt="Drug Escape Process" />
+      <p class="caption">Figure 1: Visualization of the drug escape process in cancer cells</p>
+    </div>
+  </section>
 
-  <!-- THE GROWING LANDSCAPE OF ONCOLOGY THERAPIES -->
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/957974/pexels-photo-957974.jpeg?w=3000');"></div>
+
   <section class="content">
     <h2>The Growing Landscape of Oncology Therapies</h2>
-    <p>
-      Over the next few years, <strong>many new oncology therapies</strong> will reach 
-      the market, offering unprecedented options for patients and clinicians. However, 
-      with such a rapidly expanding toolkit, clinicians face a daunting challenge: 
-      <em>how to identify the most potent drug or combination of drugs for each specific 
-      tumor profile</em>. Traditional diagnostic models have not kept pace with this 
-      expansion, leaving an urgent need for more sophisticated approaches.
-    </p>
+    <p>Over the next few years, <strong>many new oncology therapies</strong> will reach the market, offering unprecedented options for patients and clinicians. However, with such a rapidly expanding toolkit, clinicians face a daunting challenge: <em>how to identify the most potent drug or combination of drugs for each specific tumor profile</em>. Traditional diagnostic models have not kept pace with this expansion, leaving an urgent need for more sophisticated approaches.</p>
   </section>
 
-  <!-- PARALLAX 4 -->
-  <!-- Photo by ThisIsEngineering from Pexels:
-       https://www.pexels.com/photo/lab-experiment-3825468/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/3825468/pexels-photo-3825468.jpeg?w=3000');">
-  </div>
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/3825468/pexels-photo-3825468.jpeg?w=3000');"></div>
 
-  <!-- DIAGNOSTIC APPROACHES LAG BEHIND -->
   <section class="content">
     <h2>Diagnostic Approaches Lag Behind</h2>
-    <p>
-      Despite significant advances in <strong>analytical techniques</strong>—from 
-      genomics and proteomics to novel imaging methods—diagnostic innovations in 
-      oncology have <em>not kept up</em>. Existing companion diagnostics are typically 
-      tied to individual drugs or specific biomarkers, and do not address the broader, 
-      cross-cancer need to <strong>rationally select among multiple therapies</strong>. 
-      As a result, patients often miss the optimal therapeutic combination because 
-      today’s diagnostics offer only limited guidance.
-    </p>
+    <p>Despite significant advances in <strong>analytical techniques</strong>—from genomics and proteomics to novel imaging methods—diagnostic innovations in oncology have <em>not kept up</em>. Existing companion diagnostics are typically tied to individual drugs or specific biomarkers, and do not address the broader, cross-cancer need to <strong>rationally select among multiple therapies</strong>. As a result, patients often miss the optimal therapeutic combination because today's diagnostics offer only limited guidance.</p>
   </section>
 
-  <!-- PARALLAX 5 -->
-  <!-- Photo by Artem Podrez from Pexels:
-       https://www.pexels.com/photo/women-testing-samples-in-laboratory-5462247/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/5462247/pexels-photo-5462247.jpeg?w=3000');">
-  </div>
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/5462247/pexels-photo-5462247.jpeg?w=3000');"></div>
 
-  <!-- OUR FOCUS ON COMBINATION THERAPIES -->
   <section class="content">
     <h2>Our Focus on Combination Therapies</h2>
-    <p>
-      Evidence shows that <strong>pairing patients with the best possible combination of therapies</strong> 
-      yields the greatest impact on long-term outcomes. Yet, funding and development 
-      resources have traditionally flowed toward drug discovery and development rather 
-      than <em>diagnostic innovation</em>. Protean Research fills this critical gap by 
-      leveraging advanced analytical techniques and data-driven models to match each 
-      patient’s cancer profile to the <strong>most promising therapy combination</strong>.
-    </p>
+    <p>Evidence shows that <strong>pairing patients with the best possible combination of therapies</strong> yields the greatest impact on long-term outcomes. Yet, funding and development resources have traditionally flowed toward drug discovery and development rather than <em>diagnostic innovation</em>. Protean Research fills this critical gap by leveraging advanced analytical techniques and data-driven models to match each patient's cancer profile to the <strong>most promising therapy combination</strong>.</p>
   </section>
 
-  <!-- PARALLAX 6 -->
-  <!-- Photo by RF._.studio from Pexels:
-       https://www.pexels.com/photo/scientist-peers-at-a-sample-through-a-microscope-8369281/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/8369281/pexels-photo-8369281.jpeg?w=3000');">
-  </div>
+  <section class="content">
+    <h2>Combination Therapies Explained</h2>
+    <div class="infographic">
+      <img src="combination-therapies-diagram.png" alt="Combination Therapies Diagram" />
+      <p class="caption">Figure 2: How combination therapies target multiple cancer pathways</p>
+    </div>
+  </section>
 
-  <!-- WHY PROTEAN RESEARCH? -->
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/8369281/pexels-photo-8369281.jpeg?w=3000');"></div>
+
   <section class="content">
     <h2>Why Protean Research?</h2>
-    <ul>
-      <li><strong>Expertise:</strong> Our team of scientists and clinicians brings together deep experience in oncology, diagnostics, and translational research.</li>
-      <li><strong>Innovation:</strong> We employ cutting-edge analytical methods to reveal pathways of drug resistance and susceptibility.</li>
-      <li><strong>Collaboration:</strong> We work closely with pharmaceutical partners, academic researchers, and clinical teams to ensure our diagnostics are practical, cost-effective, and aligned with real-world patient needs.</li>
-      <li><strong>Impact:</strong> By guiding clinical decision-making with precision diagnostics, we aim to enhance survival rates and quality of life for cancer patients.</li>
-    </ul>
+    <div class="interactive-diagram">
+      <img src="protean-research-diagram.png" alt="Protean Research Approach" usemap="#protean-map" />
+      <map name="protean-map">
+        <area shape="rect" coords="0,0,200,100" href="#expertise" alt="Expertise" />
+        <area shape="rect" coords="210,0,410,100" href="#innovation" alt="Innovation" />
+        <area shape="rect" coords="0,110,200,210" href="#collaboration" alt="Collaboration" />
+        <area shape="rect" coords="210,110,410,210" href="#impact" alt="Impact" />
+      </map>
+    </div>
+    <div id="expertise" class="info-box">
+      <h3>Expertise</h3>
+      <p>Our team of scientists and clinicians brings together deep experience in oncology, diagnostics, and translational research.</p>
+    </div>
+    <div id="innovation" class="info-box">
+      <h3>Innovation</h3>
+      <p>We employ cutting-edge analytical methods to reveal pathways of drug resistance and susceptibility.</p>
+    </div>
+    <div id="collaboration" class="info-box">
+      <h3>Collaboration</h3>
+      <p>We work closely with pharmaceutical partners, academic researchers, and clinical teams to ensure our diagnostics are practical, cost-effective, and aligned with real-world patient needs.</p>
+    </div>
+    <div id="impact" class="info-box">
+      <h3>Impact</h3>
+      <p>By guiding clinical decision-making with precision diagnostics, we aim to enhance survival rates and quality of life for cancer patients.</p>
+    </div>
   </section>
 
-  <!-- PARALLAX 7 -->
-  <!-- Photo by Mikhail Nilov from Pexels:
-       https://www.pexels.com/photo/female-laboratory-technician-using-a-microscope-11064643/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/11064643/pexels-photo-11064643.jpeg?w=3000');">
-  </div>
+  <div class="parallax" style="background-image: url('https://images.pexels.com/photos/11064643/pexels-photo-11064643.jpeg?w=3000');"></div>
 
-  <!-- CONTACT SECTION -->
   <section class="content">
     <h2>Contact</h2>
-    <p>
-      Whether you are a pharmaceutical company, healthcare provider, or research institution, 
-      we invite you to explore collaboration opportunities with us. <br>
-      <strong>Email:</strong> <a href="mailto:info@proteanresearch.org">info@proteanresearch.org</a>
-    </p>
+    <p>Whether you are a pharmaceutical company, healthcare provider, or research institution, we invite you to explore collaboration opportunities with us.<br>
+    <strong>Email:</strong> <a href="mailto:info@proteanresearch.org">info@proteanresearch.org</a></p>
   </section>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const map = document.querySelector('map[name="protean-map"]');
+      const infoBoxes = document.querySelectorAll('.info-box');
+
+      map.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href').substring(1);
+        infoBoxes.forEach(box => box.style.display = 'none');
+        document.getElementById(targetId).style.display = 'block';
+      });
+    });
+  </script>
 </body>
 </html>
