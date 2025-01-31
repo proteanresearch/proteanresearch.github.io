@@ -41,12 +41,11 @@
       justify-content: center;
     }
 
-    .overlay h1 {
-      color: #fff;
-      font-size: 3em;
-      text-align: center;
-      margin: 0;
-      padding: 0 20px;
+    /* Logo in hero (you can adjust sizing via width, max-width, etc.) */
+    .hero-logo {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
     }
 
     /* Section banners (no parallax) */
@@ -87,12 +86,15 @@
 <body>
 
   <!-- HERO SECTION -->
-  <!-- Photo by Edward Jenner from Pexels: 
-       https://www.pexels.com/photo/man-in-blue-tshirt-looking-through-a-microscope-4033148/ -->
+  <!-- Replace src path with the actual location of your "Protean Research White logo.png" -->
   <div class="hero-banner"
        style="background-image: url('https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?w=3000');">
     <div class="overlay">
-      <h1>Protean Research Inc.</h1>
+      <img 
+        class="hero-logo" 
+        src="images/Protean Research White logo.png" 
+        alt="Protean Research Inc. White Logo"
+      >
     </div>
   </div>
 
@@ -148,11 +150,11 @@
     </p>
   </section>
 
-  <!-- IMAGE BANNER 3 (REPLACED WITH A DIFFERENT LAB IMAGE) -->
+  <!-- IMAGE BANNER 3 (REPLACED with a cell-science/microscopy image) -->
   <!-- Photo by ThisIsEngineering from Pexels:
-       https://www.pexels.com/photo/scientist-in-laboratory-holding-test-tube-3952232/ -->
+       https://www.pexels.com/photo/a-close-up-of-lab-experiment-3825529/ -->
   <div class="image-banner"
-       style="background-image: url('https://images.pexels.com/photos/3952232/pexels-photo-3952232.jpeg?w=3000');">
+       style="background-image: url('https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg?w=3000');">
   </div>
 
   <!-- DIAGNOSTIC APPROACHES LAG BEHIND -->
