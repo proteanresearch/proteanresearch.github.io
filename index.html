@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Protean Research Inc.</title>
   <style>
     /* Basic Reset & Body Styles */
@@ -21,20 +21,17 @@
     /* Parallax Sections */
     .parallax {
       height: 100vh; /* Full viewport height */
-      background-attachment: fixed; 
-      background-size: cover;
-      background-position: center;
+      background-size: cover;      /* Fill container, cropping if necessary */
+      background-position: center; /* Centered position */
       background-repeat: no-repeat;
       position: relative;
+      background-attachment: fixed; /* Parallax effect on desktop */
     }
 
     /* Overlay for the Hero Section */
     .overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
@@ -59,23 +56,26 @@
     h2 {
       margin-bottom: 20px;
     }
-
     p {
       margin-bottom: 20px;
       line-height: 1.6;
     }
-
     ul {
       margin-left: 20px;
       margin-bottom: 20px;
     }
-
     li {
       margin-bottom: 10px;
     }
 
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
+    /* 
+      Disable the 'background-attachment: fixed' for screens <= 1024px. 
+      This addresses the zoom/pixelation issues on iPads and other mobile devices. 
+    */
+    @media (max-width: 1024px) {
+      .parallax {
+        background-attachment: scroll;
+      }
       .overlay h1 {
         font-size: 2em;
       }
@@ -87,8 +87,8 @@
   <!-- HERO SECTION -->
   <!-- Photo by ThisIsEngineering from Pexels: 
        https://www.pexels.com/photo/laboratory-experiment-3912374/ -->
-  <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/3912374/pexels-photo-3912374.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+  <div class="parallax" 
+       style="background-image: url('https://images.pexels.com/photos/3912374/pexels-photo-3912374.jpeg?w=3000');">
     <div class="overlay">
       <h1>Protean Research Inc.</h1>
     </div>
@@ -110,7 +110,7 @@
   <!-- Photo by Chokniti Khongchum from Pexels:
        https://www.pexels.com/photo/person-holding-test-tubes-2280549/ -->
   <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+       style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?w=3000');">
   </div>
 
   <!-- THE CHALLENGE OF DRUG ESCAPE -->
@@ -129,7 +129,7 @@
   <!-- Photo by ThisIsEngineering from Pexels:
        https://www.pexels.com/photo/male-chemist-holding-lab-tool-957974/ -->
   <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/957974/pexels-photo-957974.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+       style="background-image: url('https://images.pexels.com/photos/957974/pexels-photo-957974.jpeg?w=3000');">
   </div>
 
   <!-- THE GROWING LANDSCAPE OF ONCOLOGY THERAPIES -->
@@ -149,7 +149,7 @@
   <!-- Photo by ThisIsEngineering from Pexels:
        https://www.pexels.com/photo/lab-experiment-3825468/ -->
   <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/3825468/pexels-photo-3825468.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+       style="background-image: url('https://images.pexels.com/photos/3825468/pexels-photo-3825468.jpeg?w=3000');">
   </div>
 
   <!-- DIAGNOSTIC APPROACHES LAG BEHIND -->
@@ -170,7 +170,7 @@
   <!-- Photo by Artem Podrez from Pexels:
        https://www.pexels.com/photo/women-testing-samples-in-laboratory-5462247/ -->
   <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/5462247/pexels-photo-5462247.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+       style="background-image: url('https://images.pexels.com/photos/5462247/pexels-photo-5462247.jpeg?w=3000');">
   </div>
 
   <!-- OUR FOCUS ON COMBINATION THERAPIES -->
@@ -190,7 +190,7 @@
   <!-- Photo by RF._.studio from Pexels:
        https://www.pexels.com/photo/scientist-peers-at-a-sample-through-a-microscope-8369281/ -->
   <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/8369281/pexels-photo-8369281.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+       style="background-image: url('https://images.pexels.com/photos/8369281/pexels-photo-8369281.jpeg?w=3000');">
   </div>
 
   <!-- WHY PROTEAN RESEARCH? -->
@@ -208,7 +208,7 @@
   <!-- Photo by Mikhail Nilov from Pexels:
        https://www.pexels.com/photo/female-laboratory-technician-using-a-microscope-11064643/ -->
   <div class="parallax"
-       style="background-image: url('https://images.pexels.com/photos/11064643/pexels-photo-11064643.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+       style="background-image: url('https://images.pexels.com/photos/11064643/pexels-photo-11064643.jpeg?w=3000');">
   </div>
 
   <!-- CONTACT SECTION -->
@@ -216,7 +216,7 @@
     <h2>Contact</h2>
     <p>
       Whether you are a pharmaceutical company, healthcare provider, or research institution, 
-      we invite you to explore collaboration opportunities with us. <br />
+      we invite you to explore collaboration opportunities with us. <br>
       <strong>Email:</strong> <a href="mailto:info@proteanresearch.org">info@proteanresearch.org</a>
     </p>
   </section>
