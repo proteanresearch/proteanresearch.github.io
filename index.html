@@ -74,11 +74,11 @@
       margin-bottom: 10px;
     }
 
-    /* 
-      Disable 'background-attachment: fixed' for screens <= 1024px 
-      (addresses zoom/pixelation issues on some devices). 
+    /*
+      Disable 'background-attachment: fixed' for screens <= 1366px
+      This helps prevent the zoom/pixelation issue on iPads and similar devices.
     */
-    @media (max-width: 1024px) {
+    @media (max-width: 1366px) {
       .parallax {
         background-attachment: scroll;
       }
@@ -205,26 +205,6 @@
     class="parallax"
     style="background-image: url('https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?w=3000');"
   ></div>
-
-  <!-- OPTIONAL: DRUG RESISTANCE / COMBINATION THERAPY DIAGRAM -->
-  <section class="content">
-    <h2>Illustrating Drug Resistance & Combination Therapies</h2>
-    <p>
-      Below is an example diagram (placeholder) that highlights how cancer cells 
-      can evolve resistance to single agents, underscoring the need for 
-      personalized combination therapies:
-    </p>
-    <!-- Replace src with any appropriate, properly licensed diagram/image -->
-    <img 
-      src="https://via.placeholder.com/800x400.png?text=Drug+Resistance+Diagram" 
-      alt="Diagram illustrating drug resistance" 
-      style="max-width:100%; height:auto; margin: 20px 0;">
-    <p>
-      By identifying genetic, proteomic, and metabolic pathways involved in 
-      resistance, Protean Research Inc. aims to recommend multi-agent regimens 
-      that preempt cancer’s ability to adapt.
-    </p>
-  </section>
 
   <!-- PARALLAX 7 -->
   <!-- Photo by Tima Miroshnichenko from Pexels:
